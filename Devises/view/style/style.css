@@ -1,0 +1,248 @@
+/* --+
+    RESET CSS
++-- */
+@import url("http://fonts.cdnfonts.com/css/gilroy-bold");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, .devises-container td, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li, .devises-container th,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+ul li, ul .devises-container th, .devises-container ul th {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, select {
+  vertical-align: middle;
+  border: none;
+}
+
+/* --+
+    FONCTIONS SASS
++-- */
+/* --+
+    IMPORTS
++-- */
+/* --+
+    VARIABLES
++-- */
+:root {
+  --black-opacity-50: rgba(0, 0, 0, 0.5);
+  --darkblue: rgb(41, 67, 92);
+  --transition-time-start: 100ms;
+  --transition-time-end: 150ms;
+  --font-family-gilroy-regular: "Gilroy-Regular";
+  --font-family-gilroy-bold: "Gilroy-Bold";
+  --font-family-gilroy-heavy: "Gilroy-Heavy";
+  --font-style-gilroy: sans-serif;
+}
+
+/* --+
+    BODY
++-- */
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* --+
+    HEADER
++-- */
+@media screen and (max-width: 700px) {
+  header {
+    padding: 50px 0px !important;
+  }
+
+  .choice-list > form label {
+    font-size: 0.85rem;
+  }
+}
+header {
+  box-shadow: 0px -5px 10px -5px var(--darkblue) inset;
+}
+header nav {
+  transform: translateY(-4px);
+}
+
+header, header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 200px;
+  padding: 15px 0px;
+}
+
+header ul, header ol, .choice-list > form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  padding: 10px 5px;
+}
+
+header ol {
+  max-width: 90%;
+}
+
+.choice-list li, .choice-list .devises-container th, .devises-container .choice-list th {
+  transition: transform var(--transition-time-end) ease-in-out;
+}
+
+.choice-list li:hover, .choice-list .devises-container th:hover, .devises-container .choice-list th:hover {
+  transform: translateY(-1.5px);
+  transition: transform var(--transition-time-start) ease-in-out;
+}
+
+.choice-list label:hover {
+  color: var(--darkblue);
+  cursor: pointer;
+}
+
+.choice-list ul {
+  border: 1px var(--darkblue) solid;
+  margin: 0px 5px;
+  background: linear-gradient(white, 98%, transparent);
+  text-align: center;
+  box-shadow: 0px 0px 1px var(--black-opacity-50);
+  line-height: 25px;
+  transition: background-color var(--transition-time-end) ease-in-out, box-shadow var(--transition-time-end) ease-in-out;
+}
+
+.choice-list ul:hover {
+  background-color: var(--darkblue);
+  box-shadow: 0px 0px 3px var(--black-opacity-50);
+  transition: background-color var(--transition-time-start) ease-in-out, box-shadow var(--transition-time-start) ease-in-out;
+}
+
+/* --+
+    MAIN
++-- */
+main, .devises-container {
+  width: calc(100% - 100px);
+  height: auto;
+  padding: 0px 50px;
+}
+
+.desc {
+  text-align: center;
+  transform: translateY(-15px);
+}
+
+.devises-container table, .devises-container tbody {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+.devises-container th {
+  width: 50%;
+  height: auto;
+  padding: 15px 0px;
+  border: 0.5px var(--darkblue) solid;
+  margin: 0px;
+  color: white;
+  background-color: var(--darkblue);
+  box-shadow: 0px -2px 4px -2px var(--black-opacity-50) inset;
+}
+
+.devises-container td {
+  width: 50%;
+  height: auto;
+  padding: 10px 0px;
+  border: 0.5px black solid;
+  margin: 0px;
+  text-align: center;
+}
+
+/* --+
+    DEFAULT SETTINGS
++-- */
+section > h1:first-of-type {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  border: unset;
+  margin: 30px 0px;
+  text-align: center;
+}
+
+h1, p, .devises-container td, span, li, .devises-container th, label {
+  font-style: var(--font-style-gilroy);
+}
+
+h1 {
+  font-family: var(--font-family-gilroy-heavy);
+  font-size: 1.75rem;
+}
+
+li, .devises-container th {
+  font-family: var(--font-family-gilroy-bold);
+  font-size: 1.25rem;
+}
+
+p, .devises-container td, label {
+  font-family: var(--font-family-gilroy-regular);
+  font-size: 0.95rem;
+}
+
+input[type=radio] {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
