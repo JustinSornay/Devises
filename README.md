@@ -1,4 +1,4 @@
-# Utilisation
+# Structure
 
 L'application est constituée de l'arborescence suivante :
 
