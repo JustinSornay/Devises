@@ -42,7 +42,7 @@ Exemple : Pour WAMP le dossier se nomme www, pour XAMP htdocs, etc.
 
 # Informations Complémentaires
 
-Pour apporter des modifications à cette application il peut être nécessaire de bien faire attention au class utilisées. Certaines d'entre elles sont des singletons. Pour les appeler, il convient donc d'utiliser une instance. Pour réaliser ceci chaque singleton possède une fonction getInstance, ex: DeviseManager::getInstance(). 
+Pour apporter des modifications à cette application il peut être nécessaire de bien faire attention à la class appelée. Certaines d'entre elles sont des singletons. Pour les appeler, il convient donc d'utiliser une instance. Pour réaliser ceci chaque singleton possède une fonction getInstance, ex: DeviseManager::getInstance(). 
 
 Au cours de mes tests, j'ai remarqué que l'API public d'IBANFIRST bloque les requêtes lorsque l'on excède un certain quota.
 Pour remédier à ce problème je stocke les devises dans la $_SESSION à la première requête envoyée.
