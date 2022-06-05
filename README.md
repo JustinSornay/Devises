@@ -1,26 +1,26 @@
 # Utilisation
 
-L'application est constituée de l'arborescence suivante : 
+L'application est constituée de l'arborescence suivante :  \n \n
 
-o Les Sources (src::folder)
-  -> Le dossier des controllers (Controller::folder)
-    a. Le controller (DevisesHistoryController.php::class)
+o Les Sources (src::folder) \n
+  -> Le dossier des controllers (Controller::folder) \n
+    a. Le controller (DevisesHistoryController.php::class) \n \n
     
-  -> Le dossier de gestion de l'API (IbanFirstAPI::folder)
-    a. Le dossier des items récupérés (Items::folder)
-      - Les devises (Devise.php::class)
-      - Le gestionnaire des devises (DeviseManager.php::class)
-    b. Le dossier des outils (Tools::folder)
-      - La class utilisé pour consommer l'API (RequestAPI.php::class)
+  -> Le dossier de gestion de l'API (IbanFirstAPI::folder) \n
+    a. Le dossier des items récupérés (Items::folder) \n
+      - Les devises (Devise.php::class) \n
+      - Le gestionnaire des devises (DeviseManager.php::class) \n
+    b. Le dossier des outils (Tools::folder) \n
+      - La class utilisé pour consommer l'API (RequestAPI.php::class) \n \n
 
-o La Vue (view::folder)
-  -> Le dossier des éléments de l'application (layout::folder)
-    a. Le formulaire de séléction des types de devises (formTypeDevise.js::file)
-  -> Le dossier des mises en pages (style::folder)
-    a. Le fichier compilé permettant l'habillage de l'index (style.css::file)
-    b. Le fichier de mappage utilisé pour convertir le fichier .scss en .css (style.css.map::file)
-    c. Le fichier utilisé pour développer le style (style.scss::file)
-  -> Le fichier contenant la structure de l'index (index.html::file)
+o La Vue (view::folder) \n
+  -> Le dossier des éléments de l'application (layout::folder) \n
+    a. Le formulaire de séléction des types de devises (formTypeDevise.js::file) \n
+  -> Le dossier des mises en pages (style::folder) \n
+    a. Le fichier compilé permettant l'habillage de l'index (style.css::file) \n
+    b. Le fichier de mappage utilisé pour convertir le fichier .scss en .css (style.css.map::file) \n
+    c. Le fichier utilisé pour développer le style (style.scss::file) \n
+  -> Le fichier contenant la structure de l'index (index.html::file) \n
 
 
 
