@@ -40,6 +40,8 @@ Dans un premier temps pour que l'application fonctionne il est nécessaire d'avo
 Pour déployer l'application il vous suffira de copier le dossier complet dans le dossier de votre hébergeur local vous permettant d'exécuter l'application.
 Exemple : Pour WAMP le dossier se nomme www, pour XAMP htdocs, etc.
 
+Une fois votre hébergeur lancé, il ne vous reste plus qu'à ouvrir un navigateur et saisir l'adresse suivante : 127.0.0.1/Devises/view/index.php.
+
 # Informations Complémentaires
 
 Pour apporter des modifications à cette application il peut être nécessaire de bien faire attention à la class appelée. Certaines class sont des singletons. Pour les appeler, il convient donc d'utiliser une instance. Pour réaliser ceci chaque singleton possède une fonction getInstance, ex: DeviseManager::getInstance(). 
